@@ -1,0 +1,18 @@
+<script type=module>
+import { bg, show } from "https://js.sabae.cc/egadv.js";
+await bg(1716);
+const a = await show("ここのマスコットは誰でしょう?",["ジバニャン","ひこにゃん"]);
+if (a == "ひこにゃん") {
+  await show("正解だよ");
+} else if (a == "ジバニャン"){
+  await show("違うニャ");
+}
+await show("ここは彦根城。ひこにゃんに会えるかも!");
+for (;;){
+  if (await show("移動しよう!",["はい","いいえ"]) == "はい"){
+    break;
+}
+  await show("会いに行こうよ!?");
+}
+  await show("我々はひこにゃんに会いに行くためアマゾンの奥地へと向かった・・・");
+</script>
